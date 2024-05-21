@@ -12,9 +12,6 @@
     <label for="description">Description:</label>
     <textarea id="description" name="description" required></textarea><br>
 
-    <label for="phone_number">Phone Number:</label>
-    <input type="text" id="phone_number" name="phone_number" required><br>
-
     <label for="price">Price:</label>
     <input type="text" id="price" name="price" required><br>
 

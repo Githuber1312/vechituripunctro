@@ -30,7 +30,7 @@ public class LoginServlet extends HttpServlet {
                 ResultSet resultSet = statement.executeQuery();
                 if (resultSet.next()) {
                     HttpSession session = request.getSession();
-                    session.setAttribute("user", email);
+                    session.setAttribute("userid", email);
                     response.sendRedirect("index");
                     System.out.println("User logged in!"); // Debug
                 } else {

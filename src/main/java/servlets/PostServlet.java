@@ -33,12 +33,10 @@ public class PostServlet extends HttpServlet {
                     post.setTitle(resultSet.getString("title"));
                     post.setDescription(resultSet.getString("description"));
                     post.setCreationDate(resultSet.getTimestamp("creation_date"));
-                    post.setUser(resultSet.getString("user_email"));
+                    post.setUsername(resultSet.getString("username"));
                     post.setPhoneNumber(resultSet.getString("phone_number"));
                     post.setPrice(resultSet.getDouble("price"));
                     posts.add(post);
-
-
                 }
             }
         } catch (SQLException e) {

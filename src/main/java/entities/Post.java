@@ -8,9 +8,11 @@ public class Post {
     private String title;
     private String description;
     private Timestamp creationDate;
-    private String user;
+    private String username;
     private String phoneNumber;
     private double price;
+
+    private int fkUserId;
 
     public int getId() {
         return id;
@@ -44,12 +46,12 @@ public class Post {
         this.creationDate = creationDate;
     }
 
-    public String getUser() {
-        return user;
+    public String getUsername() {
+        return username;
     }
 
-    public void setUser(String user) {
-        this.user = user;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String getPhoneNumber() {
@@ -66,5 +68,13 @@ public class Post {
 
     public void setPrice(double price) {
         this.price = price;
+    }
+
+    public int getFkUserId() {
+        return fkUserId;
+    }
+
+    public void setFkUserId(int fkUserId) {
+        this.fkUserId = fkUserId;
     }
 }

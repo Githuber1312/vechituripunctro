@@ -7,7 +7,7 @@
 </head>
 <body>
 <%
-    String user = (session != null) ? (String) session.getAttribute("user") : null;
+    String user = (session != null) ? (String) session.getAttribute("userid") : null;
     if (user != null) {
 %>
 <h1>Salut, <%= user %>!</h1>

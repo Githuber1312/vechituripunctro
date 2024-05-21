@@ -8,7 +8,7 @@
     <title><%= (post != null) ? post.getTitle() : "Nu am gasit acest anunt" %></title>
 </head>
 <body>
-<h1>Anunt</h1>
+<h1><%= post.getTitle() %></h1>
 <%
     if (post == null) {
         System.out.println("Post is NULL"); // Debug statement
@@ -18,13 +18,11 @@
 } else {
 %>
 <ul>
-    <li>
-        <p><strong>Descriere:</strong> <%= post.getDescription() %></p>
-        <p><strong>User:</strong> <%= post.getUser() %></p>
-        <p><strong>Data postarii:</strong> <%= post.getCreationDate() %></p>
-        <p><strong>Numar telefon:</strong> <%= post.getPhoneNumber() %></p>
-        <p><strong>Pret:</strong> <%= post.getPrice() %></p>
-    </li>
+    <p><strong>Descriere:</strong> <%= post.getDescription() %></p>
+    <p><strong>Utilizator:</strong> <%= post.getUsername() %></p>
+    <p><strong>Data postarii:</strong> <%= post.getCreationDate() %></p>
+    <p><strong>Numar telefon:</strong> <%= post.getPhoneNumber() %></p>
+    <p><strong>Pret:</strong> <%= post.getPrice() %></p>
 </ul>
 <%
     }
